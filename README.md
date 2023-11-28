@@ -30,3 +30,10 @@ This is the "merged" SBOM from hoppr using the following command.
 ``` shell
 hopctl merge --sbom-dir ./
 ```
+
+This is what we would leverage internally for tracking and has several benefits:
+
+- Producers "original" `acme_software-1.0.0.tar.gz.cdx.json` sbom would not be modified
+- Traceability to the "original" `acme_software-1.0.0.tar.gz.cdx.json` would exist an `externalReference` of `bom` type in the merged sbom.
+- The "original" `acme_software-1.0.0.tar.gz.cdx.json` can be immutable, and can be updated with new releases 
+without modifying the `acme_software-license.cdx.json` assuming a consistent `bom-ref` is used.
