@@ -1,0 +1,85 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:b6f4e926-6a94-4209-960f-c7045f4e3440",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-11-27T23:57:56+00:00",
+    "licenses" :[
+      {
+          "license": {
+              "name": "Acme Software License",
+              "url": "https://acme-software.com/licenses/LICENSE.txt"
+          }
+        }
+    ],
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.47.0"
+      }
+    ],
+    "component": {
+      "bom-ref": "pkg:oci/python@sha256%3A31ceea009f42df76371a8fb94fa191f988a25847a228dbeac35b6f8d2518a6ef?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fpython",
+      "type": "container",
+      "name": "Acme Software",
+      "version": "1.0.0",
+      "purl": "pkg:oci/python@sha256%3A31ceea009f42df76371a8fb94fa191f988a25847a228dbeac35b6f8d2518a6ef?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fpython"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "cd42f200-197b-41df-9d39-f86ce6e8dce4",
+      "type": "operating-system",
+      "name": "debian",
+      "version": "12.2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/adduser@3.134?arch=all\u0026distro=debian-12.2",
+      "type": "library",
+      "supplier": {
+        "name": "Debian Adduser Developers \u003cadduser@packages.debian.org\u003e"
+      },
+      "name": "adduser",
+      "version": "3.134",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.134?arch=all\u0026distro=debian-12.2"
+    },
+    {
+      "bom-ref": "pkg:deb/debian/apt@2.6.1?arch=amd64\u0026distro=debian-12.2",
+      "type": "library",
+      "supplier": {
+        "name": "APT Development Team \u003cdeity@lists.debian.org\u003e"
+      },
+      "name": "apt",
+      "version": "2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@2.6.1?arch=amd64\u0026distro=debian-12.2"
+    }
+  ],
+  "vulnerabilities": []
+}

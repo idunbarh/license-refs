@@ -1,0 +1,128 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:854fe401-963f-4b1f-acc7-069911ae2e7f",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-11-28T01:05:31.470731+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "bom-ref": "pkg:pypi/hoppr@1.11.0",
+          "name": "hoppr",
+          "version": "1.11.0",
+          "scope": "excluded",
+          "hashes": [],
+          "licenses": [],
+          "purl": "pkg:pypi/hoppr@1.11.0",
+          "externalReferences": [],
+          "components": [],
+          "properties": []
+        },
+        {
+          "type": "application",
+          "bom-ref": "trivy@0.47.0",
+          "name": "trivy",
+          "version": "0.47.0",
+          "scope": "excluded",
+          "hashes": [],
+          "externalReferences": []
+        }
+      ]
+    },
+    "component": {
+      "type": "container",
+      "bom-ref": "Acme Software",
+      "name": "Acme Software",
+      "version": "1.0.0",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "purl": "pkg:oci/python@sha256%3A31ceea009f42df76371a8fb94fa191f988a25847a228dbeac35b6f8d2518a6ef?arch=amd64&repository_url=index.docker.io%2Flibrary%2Fpython",
+      "externalReferences": [
+        {
+          "url": "urn:uuid:b6f4e926-6a94-4209-960f-c7045f4e3440",
+          "type": "bom"
+        }
+      ],
+      "components": [],
+      "properties": []
+    },
+    "licenses": [
+      {
+        "license": {
+          "name": "Acme Software License",
+          "licensing": {
+            "licensee": {
+              "organization": {
+                "name": "B Corp, Inc"
+              }
+            },
+            "purchaseOrder": "4567",
+            "licenseTypes": [
+              "subscription"
+            ],
+            "lastRenewal": "2022-01-01T02:07:14+00:00",
+            "expiration": "2023-01-01T02:07:14+00:00"
+          }
+        }
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "operating-system",
+      "bom-ref": "debian@12.2",
+      "name": "debian",
+      "version": "12.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.2",
+      "supplier": {
+        "name": "Debian Adduser Developers <adduser@packages.debian.org>"
+      },
+      "name": "adduser",
+      "version": "3.134",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/adduser@3.134?arch=all&distro=debian-12.2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.2",
+      "supplier": {
+        "name": "APT Development Team <deity@lists.debian.org>"
+      },
+      "name": "apt",
+      "version": "2.6.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "name": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        }
+      ],
+      "purl": "pkg:deb/debian/apt@2.6.1?arch=amd64&distro=debian-12.2"
+    }
+  ],
+  "externalReferences": [],
+  "vulnerabilities": []
+}

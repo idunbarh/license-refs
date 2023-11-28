@@ -1,0 +1,39 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.5",
+    "serialNumber": "urn:uuid:a762ef2e-8d82-11ee-b9d1-0242ac120002",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2023-11-27T23:57:56+00:00",
+        "licenses" :[
+            {
+                "license": {
+                    "name": "Acme Software License",
+                    "licensing": {
+                        "licensee":{
+                            "organization":{
+                                "name": "B Corp, Inc"
+                            }
+                        },
+                        "purchaseOrder": "4567",
+                        "licenseTypes": ["subscription"],
+                        "lastRenewal": "2022-01-01T02:07:14+00:00",
+                        "expiration": "2023-01-01T02:07:14+00:00"
+                    }
+                }
+            }
+        ],
+        "component": {
+            "type": "container",
+            "name": "Acme Software",
+            "bom-ref": "pkg:oci/python@sha256%3A31ceea009f42df76371a8fb94fa191f988a25847a228dbeac35b6f8d2518a6ef?arch=amd64\u0026repository_url=index.docker.io%2Flibrary%2Fpython",
+            "externalReferences": [
+                {
+                    "url" : "urn:uuid:b6f4e926-6a94-4209-960f-c7045f4e3440",
+                    "type" : "bom"
+                }
+            ]
+        }
+    }
+}
